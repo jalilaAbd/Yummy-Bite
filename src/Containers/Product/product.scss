@@ -1,0 +1,127 @@
+.productWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  .titleWrapper {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    .yellowRectangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 400px;
+      height: 500px;
+      background-color: #e3b53e;
+    }
+    .productTitle {
+      font-family: "Gochi Hand";
+      font-weight: 400;
+      font-size: 120px;
+      line-height: 141px;
+      color: #65577b;
+      margin-top: 20px;
+      margin-left: 60px;
+      text-transform: capitalize;
+    }
+  }
+  .infoWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    .flavorsWrapper {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 150px;
+    }
+    .flavorItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+    .infoTitle {
+      font-family: "Gochi Hand";
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 75px;
+      color: #000000;
+      margin-top: 50px;
+    }
+
+    .detailTitle {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 34px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+  }
+  .contourWrapper {
+    position: relative;
+    width: 530px;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 580px) {
+      width: 480px;
+      height: 480px;
+    }
+    .contourCercle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 230px;
+      height: 230px;
+      background-color: #65577b;
+      border-radius: 50%;
+    }
+    .mainContourCercle {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      width: 470px;
+      height: 470px;
+      border-radius: 50%;
+      background-color: #65577b;
+      @media screen and (max-width: 580px) {
+        top: 30px;
+        left: 40px;
+        width: 420px;
+        height: 420px;
+      }
+    }
+    .contourCercleYellow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 530px;
+      height: 530px;
+      border-radius: 50%;
+      border: 2px solid #e3b53e;
+      @media screen and (max-width: 580px) {
+        width: 480px;
+        height: 480px;
+      }
+    }
+    .contourImage {
+      width: 440px;
+      height: 440px;
+      z-index: 2;
+      border-radius: 50%;
+      @media screen and (max-width: 580px) {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}

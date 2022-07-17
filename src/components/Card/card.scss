@@ -1,0 +1,44 @@
+.cardContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 50px;
+  &:hover > .descriptionWrapper {
+    background-color: rgba(227, 181, 62, 0.8);
+  }
+  &:hover > .descriptionWrapper .line {
+    border-bottom: 2px solid #65577b;
+  }
+  .cardImage {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .descriptionWrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(101, 87, 123, 0.8);
+    border-radius: 0px 0px 20px 20px;
+    height: 120px;
+    padding: 20px;
+    color: #ffffff;
+    .cardTitle {
+      font-family: "Montez";
+      font-size: 40px;
+      text-transform: capitalize;
+    }
+    .description {
+      font-family: "Montserrat";
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .line {
+      border-bottom: 2px solid #e3b53e;
+      width: 95px;
+    }
+  }
+}

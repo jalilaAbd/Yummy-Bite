@@ -1,0 +1,136 @@
+.content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 100px;
+  @media screen and (max-width: 960px) {
+    padding: 100px 80px;
+  }
+  @media screen and (max-width: 840px) {
+    padding: 80px 50px;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 50px 30px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 30px 20px;
+  }
+  .contactWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    @media screen and (max-width: 840px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .formWrapper {
+      display: flex;
+      width: 50%;
+      max-width: 500px;
+      flex-direction: column;
+      @media screen and (max-width: 1300px) {
+        max-width: 450px;
+      }
+      @media screen and (max-width: 1150px) {
+        max-width: 400px;
+      }
+      @media screen and (max-width: 840px) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 40px;
+        max-width: 500px;
+      }
+    }
+    .infoWrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      @media screen and (max-width: 840px) {
+        width: 100%;
+        margin-top: 40px;
+      }
+      .purpleCercle {
+        position: absolute;
+        top: calc(50% - 280px);
+        width: 520px;
+        height: 500px;
+        border-radius: 50%;
+        border: 2px solid #65577b;
+        @media screen and (max-width: 1300px) {
+          top: calc(50% - 250px);
+          width: 470px;
+          height: 450px;
+        }
+        @media screen and (max-width: 1150px) {
+          top: calc(50% - 215px);
+          width: 390px;
+          height: 380px;
+        }
+        @media screen and (max-width: 980px) {
+          top: calc(50% - 190px);
+          width: 355px;
+          height: 350px;
+        }
+      }
+      .infoCercle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background: #e3b53e;
+        border-radius: 50%;
+        @media screen and (max-width: 1300px) {
+          width: 450px;
+          height: 450px;
+        }
+        @media screen and (max-width: 1150px) {
+          width: 380px;
+          height: 380px;
+        }
+        @media screen and (max-width: 980px) {
+          width: 350px;
+          height: 350px;
+        }
+        .info {
+          font-family: "Montserrat";
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 49px;
+          color: #ffffff;
+          @media screen and (max-width: 980px) {
+            font-size: 32px;
+            line-height: 32px;
+          }
+        }
+        .itemsWrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          .infoItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            .infoText {
+              font-family: "Montserrat";
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 29px;
+              color: #ffffff;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

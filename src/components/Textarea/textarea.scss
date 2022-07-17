@@ -1,0 +1,33 @@
+.textareaWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  .textareaLabel {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #65577b;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .textarea {
+    height: 150px;
+    background: #ffffff;
+    border: 2px solid #65577b;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 24px;
+    &:hover {
+      border: 2px solid #e3b53e;
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid #e3b53e;
+    }
+  }
+}
