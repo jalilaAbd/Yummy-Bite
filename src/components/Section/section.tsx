@@ -1,8 +1,6 @@
 import React, { forwardRef, Ref } from "react";
 import Button from "../Button/button";
 import Card from "../Card/card";
-import { Link } from "gatsby";
-import { useStateContext } from "../../Contexts/ContextProvider";
 import "./section.scss";
 
 type Product = {
@@ -36,7 +34,6 @@ const Section = forwardRef(
     }: Props,
     ref: Ref<HTMLDivElement>
   ) => {
-    const { width } = useStateContext();
     const scrollClick = (offsetTop: number) => {
       if (offsetTop)
         window.scrollTo({
@@ -45,15 +42,13 @@ const Section = forwardRef(
           behavior: "smooth",
         });
     };
-
     return (
       <div className="sectionContainer" ref={ref}>
         {image ? (
           <div
             className="contentWithImg"
             style={{
-              flexDirection:
-                width > 840 ? (inverse ? "row-reverse" : "row") : "column",
+              flexDirection: inverse ? "row-reverse" : "row",
             }}
           >
             <div className="textContainer">

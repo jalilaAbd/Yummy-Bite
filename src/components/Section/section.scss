@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 840px) {
+      flex-direction: column !important;
       align-items: center;
     }
   }
